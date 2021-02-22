@@ -18,7 +18,7 @@ class RedditAdapter : PagingDataAdapter<RedditPost, RedditAdapter.RedditViewHold
         val view = LayoutInflater.from(parent.context).inflate(R.layout.reddit_item, parent, false)
         return RedditViewHolder(view)
     }
-
+//Best implementation
 
     override fun onBindViewHolder(holder: RedditViewHolder, position: Int) {
         getItem(position)?.let { holder.bindPost(it) }
